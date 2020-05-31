@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodPictures</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="header">
+    <p><a href="/" class="title1">Food-pictures</a><p>
+
+
+<div class="header__list">
+  <% if user_signed_in? %>
+    <div class="user_nav user_m">
+      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+      <%= link_to  "投稿する", "/posts/new", class: "foodpost" %>
+    </div>
+  <% else %>
+    <div class="user-m">
+      <%= link_to "ログイン", new_user_session_path, class: 'foodpost' %>
+      <%= link_to "新規登録", new_user_registration_path, class: 'foodpost' %>
+    </div>
+  <% end %>
+</div>
+</div>
+    <%= yield %>
+  </body>
+</html>

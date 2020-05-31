@@ -1,0 +1,14 @@
+<div class="contents row">
+  <div class="container">
+    <%= form_with(model: @post, local: true) do |form| %>
+      <h3>
+   
+      </h3>
+     
+      <%= form.text_field :name, placeholder: "店名" %>
+      <%= form.text_field :image, placeholder: "Image Url" %>
+      <%= form.submit "SEND" %>
+      
+    <% end %>
+  </div>
+</div>
