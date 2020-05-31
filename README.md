@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # food-pictures
-=======
->>>>>>> Revert "Revert "food-pictures (完成)""
 # README
 
 This README would normally document whatever steps are necessary to get the
