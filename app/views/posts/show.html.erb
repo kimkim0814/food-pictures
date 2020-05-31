@@ -1,0 +1,25 @@
+<div class ="back">
+  <div class="content_show" style="background-image: url(<%= @post.image %>);">
+    <div class="more">
+      
+      <span><%= image_tag 'arrow_top.png' %></span>
+      <ul class="more_list">
+        <li>
+          <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', "/posts/#{@post.id}", method: :delete %>
+        </li>
+      </ul>
+    </div>
+    <h3>いいね件数: <%= @post.likes.count %></h3>
+    <% if current_user.already_liked?(@post) %>
+      <%= button_to '取り消し', post_like_path(@post), method: :delete %>
+    <% else %>
+      <%= button_to 'いいね', post_likes_path(@post) %>
+    <% end %>
+    <%= simple_format(@post.name) %>
+    <span class="name"><%= @post.name %>
+    </span>
+  </div>
+</div>
