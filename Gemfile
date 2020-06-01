@@ -70,3 +70,9 @@ gem 'remotipart'
 
 gem 'pry-rails'
 
+gem 'sqlite3', group: [:development, :test]
+
+
+
+
+
