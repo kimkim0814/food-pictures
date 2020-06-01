@@ -107,3 +107,24 @@ h3{
 .user_remember_me{
   display: none;
 }
+
+.new_user{
+  color: blue;
+  font-size:25px;
+  font-weight: bold;
+  a{
+    display: inline-block;
+    padding: 0.3em 0.5em;
+    text-decoration: none;
+    background: coral;
+    color: #FFF;
+    border-bottom: solid 4px tomato;
+    border-radius: 3px;
+
+  }
+ 
+}
+
+h2{
+  color: white;
+}
