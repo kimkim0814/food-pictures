@@ -23,6 +23,16 @@ https://food-pictures.herokuapp.com/
 heroku にてdeploy
 
 
-## Author
 
-Tsubasa.Kimura
+## 機能一覧
+
+-　アカウント作成
+-　ユーザーログイン機能
+ゲストログイン機能あり
+- 投稿機能
+画像投稿機能、いいね機能あり
+
+
+## 今後について
+機能面として、いいねを多い順にソートする機能とGoogle map APIを使用して位置情報を付随させる機能を付けたいと考えている。
+
