@@ -1,25 +1,14 @@
-# food-pictures
-# README
+food-pictures
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Overview
+食べ物の画像を投稿するアプリケーション
 
-Things you may want to cover:
+## Description
+いいね機能 ログイン機能があるが、ニックネーム機能はあえてつけていません。
+食べ物そのものがどれだけ人気(いいね)があるかを確かめるためにそうしました。
 
-* Ruby version
 
-* System dependencies
+## Author
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Tsubasa.Kimura

@@ -69,3 +69,4 @@ gem 'sprockets', '3.7.2'
 gem 'remotipart'
 
 gem 'pry-rails'
+
