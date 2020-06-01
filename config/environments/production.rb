@@ -83,6 +83,10 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
+  config.assets.compile = true
+  config.assets.initialize_on_precompile = false
+  config.assets.js_compressor = Uglifier.new(harmony: true)
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
@@ -93,8 +97,3 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 end
 
-config.assets.compile = true
-
-
-config.assets.initialize_on_precompile = false
-config.assets.js_compressor = Uglifier.new(harmony: true)
