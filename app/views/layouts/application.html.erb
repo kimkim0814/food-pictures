@@ -24,8 +24,11 @@
     <div class="user-m">
       <%= link_to "ログイン", new_user_session_path, class: 'foodpost' %>
       <%= link_to "新規登録", new_user_registration_path, class: 'foodpost' %>
+      <%= link_to 'ゲストログイン（閲覧用）', posts_guest_sign_in_path, method: :post %>
+
     </div>
   <% end %>
+  
 </div>
 </div>
     <%= yield %>

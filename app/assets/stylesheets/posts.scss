@@ -15,6 +15,19 @@ body{
       font-family: Impact;
       
     }
+    &__list{
+      a{
+        display: inline-block;
+        padding: 0.1em 0.4em;
+        text-decoration: none;
+        background: coral;
+        color: #FFF;
+        border-bottom: solid 4px tomato;
+        border-radius: 3px;
+    
+      }
+     
+    }
   }
   
 }
@@ -112,19 +125,10 @@ h3{
   color: blue;
   font-size:25px;
   font-weight: bold;
-  a{
-    display: inline-block;
-    padding: 0.3em 0.5em;
-    text-decoration: none;
-    background: coral;
-    color: #FFF;
-    border-bottom: solid 4px tomato;
-    border-radius: 3px;
 
-  }
- 
 }
 
 h2{
   color: white;
 }
+
