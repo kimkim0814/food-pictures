@@ -94,4 +94,7 @@ Rails.application.configure do
 end
 
 config.assets.compile = true
+
 config.assets.initialize_on_precompile=false
+
+config.assets.js_compressor = Uglifier.new(harmony: true)
