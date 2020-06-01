@@ -11,7 +11,7 @@
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
-
+<%= link_to 'ゲストログイン（閲覧用）', posts_guest_sign_in_path, method: :post %>
 
   <div class="actions">
     <%= f.submit "Log in" %>
