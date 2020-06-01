@@ -16,6 +16,7 @@ https://food-pictures.herokuapp.com/
 - Ruby 2.5.1
 - Ruby on Rails 5.2.4.3
 - MySQL 5.6.47
+
 **フロントエンド**
 - html
 - sass
