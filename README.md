@@ -31,7 +31,10 @@ https://food-pictures.herokuapp.com/
 -　ユーザーログイン機能
 ゲストログイン機能あり
 - 投稿機能
-画像投稿機能、いいね機能あり
+画像投稿機能(carrierwaveを使用)
+いいね機能あり
+-ページネーション機能
+   kaminariを使用
 
 
 ## 今後について
