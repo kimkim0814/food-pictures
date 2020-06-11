@@ -35,6 +35,7 @@ https://food-pictures.herokuapp.com/
 いいね機能あり
 -ページネーション機能
    kaminariを使用
+-コメント機能を追加(2020-6-11)
 
 
 ## 今後について
