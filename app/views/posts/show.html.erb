@@ -24,4 +24,26 @@
     <span class="name"><%= @post.name %>
     </span>
   </div>
+    <div class="container">
+      <%= form_with(model: [@post, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+ 
+      <div class="comments">
+      <h4>＜コメント一覧＞</h4>
+       <div class="comment-box">
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+
+          <p>
+            会員番号<%=comment.user_id %>番さん
+            <%= comment.text %>
+          </p>
+
+        <% end %>
+      <% end %>
+         <div>
+    </div>
+  </div>
 </div>

@@ -102,10 +102,38 @@ input[type="submit"] {
     height: 60vh;
     background-size: cover;
     margin: 0 auto;
-   
+    p{
+      display: none;
+    }
   }
-  p{
-    display: none;
+  .comments{
+    h4{
+      font-size:25px ;
+      font-weight: bold;
+      color: coral;
+      border: solid 1px brown;
+      width: 250px;
+      text-align: center;
+      background-color:antiquewhite;
+      border-radius: 25px 25px 25px 25px;
+
+    }
+    .comment-box{
+      width: 100%;
+      height: 200px;
+      overflow: scroll;
+      background-color: whitesmoke;
+      border: solid 2px brown;
+      
+    p{
+      color: wheat;
+      font-size: 22px;
+      font-weight: 500;
+      border: solid 1px;
+      color: steelblue;
+      text-align: center;
+    }
+  }
   }
 
 }
