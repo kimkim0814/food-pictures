@@ -102,7 +102,9 @@ input[type="submit"] {
     height: 60vh;
     background-size: cover;
     margin: 0 auto;
-
+    p{
+      display: none;
+    }
   }
   .comments{
     h4{

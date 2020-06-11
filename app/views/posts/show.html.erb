@@ -37,12 +37,13 @@
         <% @comments.each do |comment| %>
 
           <p>
+            会員番号<%=comment.user_id %>番さん
             <%= comment.text %>
           </p>
 
         <% end %>
       <% end %>
-                <div>
+         <div>
     </div>
   </div>
 </div>
