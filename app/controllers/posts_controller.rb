@@ -19,6 +19,7 @@ class PostsController < ApplicationController
 
   def create
     Post.create(post_params)
+    @post = Post.create params.require(:post).permit(:name, :image)
   end
 
   def destroy
