@@ -1,9 +1,6 @@
 <div class="contents row">
   <div class="container">
     <%= form_with(model: @post, local: true) do |form| %>
-      <h3>
-   
-      </h3>
       <%= form.text_field :name, placeholder: "店名" %>
       <%= form.file_field :image %>
       <%= form.submit "SEND" %>
