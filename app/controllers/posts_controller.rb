@@ -24,7 +24,6 @@ class PostsController < ApplicationController
   def destroy
     post = Post.find(params[:id])
     post.destroy
-
   end
   
   def edit
@@ -46,7 +45,6 @@ class PostsController < ApplicationController
   private
   def post_params
     params.require(:post).permit(:name, :image).merge(user_id: current_user.id)
-    
   end
 
   def set_post
