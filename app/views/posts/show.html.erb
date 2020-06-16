@@ -14,7 +14,7 @@
       </ul>
     </div>
       <% end %>
-    <i class="fas fa-heart"> <%= @post.likes.count %><i>
+    <i class="fas fa-heart"> <%= @post.likes.count %></i>
     <% if current_user.already_liked?(@post) %>
       <%= button_to '取り消し', post_like_path(@post), method: :delete %>
     <% else %>
