@@ -14,12 +14,17 @@
       </ul>
     </div>
       <% end %>
-    <i class="fas fa-heart"> <%= @post.likes.count %></i>
+  <div class= "like-function">
     <% if current_user.already_liked?(@post) %>
-      <%= button_to '取り消し', post_like_path(@post), method: :delete %>
+      <%= link_to post_like_path(@post), method: :delete do %>
+      <i class= "fas fa-heart"> <%= @post.likes.count %></i>
+        <% end %>
     <% else %>
-      <%= button_to 'いいね', post_likes_path(@post) %>
+      <%= link_to post_likes_path(@post), method: :post do %>
+       <i class= "far fa-heart"> <%= @post.likes.count %></i>
+        <% end %>
     <% end %>
+</div>
     <%= simple_format(@post.name) %>
     <span class="name"><%= @post.name %>
     </span>
