@@ -22,8 +22,7 @@ https://food-pictures.herokuapp.com/
 - sass
 
 **インフラ**
-- heroku(deployに使用)
-- AWS(S3)
+- heroku
 
 ## 機能一覧
   
