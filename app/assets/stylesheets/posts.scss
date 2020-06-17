@@ -103,14 +103,25 @@ input[type="submit"] {
     background-size: cover;
     margin: 0 auto;
     text-align: center;
+    position: relative;
     p{
       display: none;
     }
+    .like-function{
+
+
+    a{
+
     i{
       color: red;
       font-size:25px;
-
+      position: absolute;
+      left:5px;
+      bottom: 5px;
+      
     }
+  }
+}
   }
   .comments{
     h4{
