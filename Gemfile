@@ -82,3 +82,5 @@ gem "font-awesome-sass"
 gem 'fog'
 
 gem 'mini_magick'
+
+gem 'dotenv-rails'
