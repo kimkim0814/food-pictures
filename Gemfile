@@ -79,10 +79,5 @@ gem 'carrierwave', '~>1.0'
 
 gem "font-awesome-sass"
 
-group :production do
-  gem 'pg',             '0.18.0'
-  gem 'rails_12factor', '0.0.2'
-  gem 'fog-aws'
-end
-
+gem 'fog'
 gem 'mini_magick'
