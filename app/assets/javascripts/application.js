@@ -15,6 +15,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery.remotipart
 //= require_tree .
 
 

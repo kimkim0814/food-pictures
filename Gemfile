@@ -88,3 +88,5 @@ gem 'dotenv-rails'
 gem "jquery-rails"
 
 gem 'jquery-turbolinks'
+
+gem 'remotipart'

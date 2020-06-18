@@ -1,12 +1,12 @@
 $(function(){
-  $('.title1').hover(
+  $('.header').hover(
 
-    function(){
+         function(){
       $('.explain').fadeIn();
     },
         function(){
       $('.explain').fadeOut();
-    },
+    }
     )
     
 });
