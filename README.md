@@ -22,7 +22,7 @@ https://food-pictures.herokuapp.com/
 **フロントエンド**
 - html
 - sass
-
+- jQuery
 **インフラ**
 - heroku
 - AWS(S3)
