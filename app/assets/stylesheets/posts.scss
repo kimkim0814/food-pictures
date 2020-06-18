@@ -8,12 +8,25 @@ body{
     height: 80px;
     width: 100%;
     background-color: maroon;
-    
-    .title1{
-      color: white;
-      font-size:25px;
-      font-family: Impact;
+    &__top{
+      display: flex;
+
+      .title1{
+        color: white;
+        font-size:25px;
+        font-family: Impact;
+        list-style: none;
+      }
       
+      .explain{
+        display: none;
+        float: right;
+        color: white;
+        font-size:15px;
+        font-weight: 300;
+        padding-left:40px;
+
+      }
     }
     &__list{
       a{
