@@ -25,7 +25,7 @@ https://food-pictures.herokuapp.com/
 
 **インフラ**
 - heroku
-
+- AWS(S3)
 ## 機能一覧
   
  - いいね機能あり
