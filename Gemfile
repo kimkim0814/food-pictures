@@ -80,4 +80,5 @@ gem 'carrierwave', '~>1.0'
 gem "font-awesome-sass"
 
 gem 'fog'
+
 gem 'mini_magick'
