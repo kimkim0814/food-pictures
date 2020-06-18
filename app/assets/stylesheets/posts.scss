@@ -8,12 +8,25 @@ body{
     height: 80px;
     width: 100%;
     background-color: maroon;
-    
-    .title1{
-      color: white;
-      font-size:25px;
-      font-family: Impact;
+    &__top{
+      display: flex;
+
+      .title1{
+        color: white;
+        font-size:25px;
+        font-family: Impact;
+        list-style: none;
+      }
       
+      .explain{
+        display: none;
+        float: right;
+        color: white;
+        font-size:15px;
+        font-weight: 300;
+        padding-left:40px;
+
+      }
     }
     &__list{
       a{
@@ -184,4 +197,23 @@ h2{
   display:none;
   }
 
+}
+
+.start {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
 }

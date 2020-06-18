@@ -11,9 +11,10 @@
 
   <body>
     <div class="header">
-    <p><a href="/" class="title1">Food-pictures</a><p>
-
-
+        <div class="header__top">
+    <p><a href="/" class="title1">Food-pictures</a></p>
+    <p class="explain">匿名で食べ物を投稿できるアプリケーションです 今日食べたご飯を投稿してみましょう。</p>
+        </div>
 <div class="header__list">
   <% if user_signed_in? %>
     <div class="user_nav user_m">
@@ -25,10 +26,8 @@
       <%= link_to "ログイン", new_user_session_path, class: 'foodpost' %>
       <%= link_to "新規登録", new_user_registration_path, class: 'foodpost' %>
       <%= link_to 'ゲストログイン（閲覧用）', posts_guest_sign_in_path, method: :post %>
-
     </div>
   <% end %>
-  
 </div>
 </div>
     <%= yield %>

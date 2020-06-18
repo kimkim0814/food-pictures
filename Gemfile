@@ -84,3 +84,9 @@ gem 'fog'
 gem 'mini_magick'
 
 gem 'dotenv-rails'
+
+gem "jquery-rails"
+
+
+
+gem 'remotipart'
