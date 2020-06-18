@@ -7,6 +7,6 @@ CarrierWave.configure do |config|
       region: 'ap-northeast-1'
     }
 
-    config.fog_directory     =  ENV['S3_BUCKET']
+    config.fog_directory     =  'food-pictures-bucket'
   end
 end
