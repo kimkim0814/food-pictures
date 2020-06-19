@@ -39,6 +39,7 @@ https://food-pictures.herokuapp.com/
  - 投稿機能  
    - 画像投稿機能(carrierwaveを使用)
  -  コメント機能を追加(2020-6-11)
+ -  検索機能を追加(2020-6-18)
 
 
 ## 今後について
