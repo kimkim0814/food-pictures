@@ -10,10 +10,10 @@ $(function(){
     }
   )
   setTimeout(function(){
-		$('.start p').fadeIn(1600);
-	},300); 
+		$('.start p').fadeIn(800);
+	},200); 
 	setTimeout(function(){
-		$('.start').fadeOut(500);
-	},1500); 
+		$('.start').fadeOut(1000);
+	},1000); 
   
 });
