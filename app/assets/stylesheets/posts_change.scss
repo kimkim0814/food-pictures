@@ -1,0 +1,28 @@
+.success{
+  background: rgba(245,222,179, 0.7);
+  height: 100px;
+  h3{
+    font-weight: bold;
+    color: white;
+    font-size:30px;
+  }
+  .btn {
+    color: #fff;
+    border-top: 4px solid coral;
+    border-right: 4px solid tomato;
+    border-bottom: 4px solid tomato;
+    border-left: 4px solid coral;
+    border-radius: 0;
+    background: orangered;
+    font-size: 25px;
+  }
+  
+  .btn:hover{
+    color: #fff;
+    border-top: 4px solid  tomato;
+    border-right: 4px solid coral;
+    border-bottom: 4px solid coral;
+    border-left: 4px solid  tomato;
+    font-size: 25px;
+  }
+}
