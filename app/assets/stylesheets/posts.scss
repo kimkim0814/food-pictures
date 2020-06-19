@@ -29,6 +29,7 @@ body{
       }
     }
     &__list{
+      display: flex;
       a{
         display: inline-block;
         padding: 0.1em 0.4em;
@@ -39,7 +40,21 @@ body{
         border-radius: 3px;
     
       }
-     
+     .search-form{
+       display: flex;
+       float:right;
+       position: absolute;
+       right: 0;
+       height: 30px;
+
+        .search-btn{
+          line-height: 30px;
+          padding-bottom: 10px;
+          line-height: 12px;
+        }
+     }
+
+
     }
   }
   
