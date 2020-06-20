@@ -27,7 +27,7 @@ https://food-pictures.herokuapp.com/
 
 **インフラ**
 - heroku
-- AWS(S3)
+- AWS(S3)(herokuのみだと画像が消えてしまうので追加 2020-06-17)
 ## 機能一覧
   
  - いいね機能あり
