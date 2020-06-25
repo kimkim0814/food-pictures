@@ -2,7 +2,8 @@ food-pictures
 ====
 自身で初めて作成を手掛けたアプリケーションです。
 僕を含めた食べ物が好きな方のために作成しました。
-<img width="1436" alt="スクリーンショット 2020-06-17 11 55 30" src="https://user-images.githubusercontent.com/54876760/84850180-1313cd00-b092-11ea-9f97-8099d2680d9a.png">
+<img width="1439" alt="スクリーンショット 2020-06-25 18 19 59" src="https://user-images.githubusercontent.com/54876760/85692799-a7c09f80-b710-11ea-84e3-f83e479d6a6e.png">
+
 
 
 ## 制作の背景
