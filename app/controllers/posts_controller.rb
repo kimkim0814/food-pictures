@@ -33,6 +33,9 @@ class PostsController < ApplicationController
     @posts = Post.search(params[:keyword])
   end
 
+  def sort
+    selection = params[:keyword]
+    @posts = Post.sort(selection)
   def update
     post = Post.find(params[:id])
     post.update(post_params)
