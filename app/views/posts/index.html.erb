@@ -14,7 +14,7 @@
                             ['いいねが多い順', 'likes'],
                             ['いいねが少ない順', 'dislikes'],
                           ] %>
-  <%=form.submit%>
+  <%=form.submit class:"sort-box" %>
         <% end %>
 <% @posts.each do |post| %>
 
@@ -33,7 +33,7 @@
             <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
           </li>
              <% end %>
-                  <% end %>
+           <% end %>
         </ul>
 
       </div>
