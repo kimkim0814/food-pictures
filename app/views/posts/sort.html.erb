@@ -6,8 +6,7 @@
 <%= form_with model: @post, url: sort_path, method: :get, local: true do |form| %>
   <%= form.select :keyword,[ ['投稿が新しい順', 'new'],
                             ['投稿が古い順', 'old'],
-                            ['いいねが多い順', 'likes'],
-                            ['いいねが少ない順', 'dislikes'],
+                            ['いいねが多い順(いいね1以上)', 'likes'],
                           ] %>
   <%=form.submit%>
         <% end %>

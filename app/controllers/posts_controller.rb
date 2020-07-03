@@ -36,6 +36,7 @@ class PostsController < ApplicationController
   def sort
     selection = params[:keyword]
     @posts = Post.sort(selection)
+
   end
   
   def update

@@ -9,7 +9,7 @@ class Post < ApplicationRecord
     return Post.all unless search
     Post.where('name LIKE(?)', "%#{search}%")
   end
-
+## ソート機能
   def self.sort(selection)
     case selection
     when 'new'
@@ -18,8 +18,6 @@ class Post < ApplicationRecord
       return all.order(created_at: :ASC)
     when 'likes'
       return find(Like.group(:post_id).order(Arel.sql('count(post_id) desc')).pluck(:post_id))
-    when 'dislikes'
-      return find(Like.group(:post_id).order(Arel.sql('count(post_id) asc')).pluck(:post_id))
     end
   end
 end
