@@ -119,10 +119,11 @@ body{
       bottom: 0px;
       right:5px;
       position: absolute;
+      border: solid 2px #FFC107;
+      background-color: coral;
           p{
           color: white;
-
-          font-size: 28px;
+          font-size: 25px;
           font-family: serif;
           }
     }
@@ -145,15 +146,26 @@ body{
   background: rgba(mintcream, 0.5);
   padding-top:50px;
   .content_show{
-    width: 75%;
-    height: 60vh;
+    width: 700px;
+    height: 400px;
     background-size: cover;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    p{
-      display: none;
+    .name{
+      bottom: 0px;
+      right:5px;
+      position: absolute;
+      border: solid 2px #FFC107;
+      background-color: coral;
+          p{
+          color: white;
+          font-size: 30px;
+          font-family: serif;
+          font-weight: 400;
+          }
     }
+
     .like-function{
 
 

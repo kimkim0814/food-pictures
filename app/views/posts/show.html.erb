@@ -25,9 +25,9 @@
         <% end %>
     <% end %>
 </div>
-    <%= simple_format(@post.name) %>
-    <span class="name"><%= @post.name %>
-    </span>
+        <div class="name">
+        <p><%=@post.name%></p>
+      </div>
   </div>
     <div class="container">
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
