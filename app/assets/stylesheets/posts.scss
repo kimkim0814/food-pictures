@@ -107,21 +107,30 @@ body{
     background-size: cover;
     margin:40px 115px;
     position: relative;
-  
+    
+     li{
+       a{
+         color:deeppink;
+         font-weight: bold;
+       }
+     }
    
-   
+     .name{
+      bottom: 0px;
+      right:5px;
+      position: absolute;
+          p{
+          color: white;
+
+          font-size: 28px;
+          font-family: serif;
+          }
+    }
 
   }
 }
 
-.name{
-  color: white;
-  bottom: 0px;
-  right:5px;
-  position: absolute;
-  font-size: 25px;
-  font-family: serif;
-}
+
 
 
 // form全体
