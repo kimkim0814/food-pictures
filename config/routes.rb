@@ -8,10 +8,8 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
-    member do
-      get 'sort'
-    end
+
   end
   resources :users, only: :show
-  # get 'sort', to:'posts#sort'
+  get 'sort', to:'posts#sort'
 end
