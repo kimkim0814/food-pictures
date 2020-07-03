@@ -28,6 +28,7 @@
       <%= link_to 'ゲストログイン（閲覧用）', posts_guest_sign_in_path, method: :post %>
     </div>
   <% end %>
+  
   <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "食べ物を検索する", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>

@@ -1,0 +1,29 @@
+// 投稿画面
+.container{
+  text-align: center;
+  input,textarea {
+    width: 50%;
+    border: 1px solid ;
+    border-radius: 5px;
+    font-family: monospace;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+
+  input[type="submit"] {
+  
+    display: block;
+    border-radius: 20px;
+    color:black;
+    background-color: gold;
+    border:solid 1px brown;
+    font-size: 18px;
+    width: 100px;
+    margin: 0 auto;
+  }
+  label{
+  display:none;
+  }
+
+}

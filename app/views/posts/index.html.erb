@@ -8,7 +8,15 @@
  
 
 <div class="main">
+<%= form_with model: @post, url: sort_path, method: :get, local: true do |form| %>
+  <%= form.select :keyword,[ ['投稿が新しい順', 'new'],
+                            ['投稿が古い順', 'old'],
+                            ['いいねが多い順(いいね1以上)', 'likes'],
+                          ] %>
+  <%=form.submit class:"sort-box" %>
+        <% end %>
 <% @posts.each do |post| %>
+
     <div class="content_post" style='background-image: url(<%= post.image %>);'>
        <div class="more">
         <ul class="more_list">
@@ -24,7 +32,7 @@
             <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
           </li>
              <% end %>
-                  <% end %>
+           <% end %>
         </ul>
 
       </div>
