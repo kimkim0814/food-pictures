@@ -1,21 +1,25 @@
-<html lang="ja">
-<head>
-<meta charset="utf-8" />
-<link rel="stylesheet"  href="posts.css">
-<title>food-pictures</title>
-</head>
 <body>
  
 
 <div class="main">
+<%= form_with model: @post, url: sort_post_path, method: :get, local: true do |form| %>
+  <%= form.select :keyword,[ ['投稿が新しい順', 'new'],
+                            ['投稿が古い順', 'old'],
+                            ['いいねが多い順', 'likes'],
+                            ['いいねが少ない順', 'dislikes'],
+                          ] %>
+  <%=form.submit%>
+        <% end %>
 <% @posts.each do |post| %>
+
     <div class="content_post" style='background-image: url(<%= post.image %>);'>
        <div class="more">
         <ul class="more_list">
+           <%if user_signed_in? %>
            <li>
             <%= link_to '詳細', "/posts/#{post.id}", method: :get %>
           </li>
-            <% if user_signed_in? && current_user.id == post.user_id %>
+         <% if user_signed_in? && current_user.id == post.user_id %>
           <li>
             <%= link_to '編集', "/posts/#{post.id}/edit", method: :get %>
           </li>
@@ -23,6 +27,7 @@
             <%= link_to '削除', "/posts/#{post.id}", method: :delete %>
           </li>
              <% end %>
+                  <% end %>
         </ul>
 
       </div>
@@ -32,10 +37,8 @@
     </div>
      
      <% end %>
-    
       <div class="start">
     <p><%= image_tag 'logo.png' %></p>
   </div>
 </div>
 </body>
-</html>

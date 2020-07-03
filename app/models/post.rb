@@ -17,9 +17,9 @@ class Post < ApplicationRecord
     when 'old'
       return all.order(created_at: :ASC)
     when 'likes'
-      return find(Favorite.group(:post_id).order(Arel.sql('count(post_id) desc')).pluck(:post_id))
+      return find(Like.group(:post_id).order(Arel.sql('count(post_id) desc')).pluck(:post_id))
     when 'dislikes'
-      return find(Favorite.group(:post_id).order(Arel.sql('count(post_id) asc')).pluck(:post_id))
+      return find(Like.group(:post_id).order(Arel.sql('count(post_id) asc')).pluck(:post_id))
     end
   end
 end
