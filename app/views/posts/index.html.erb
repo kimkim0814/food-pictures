@@ -8,6 +8,7 @@
  
 
 <div class="main">
+   <%if user_signed_in? %>
 <%= form_with model: @post, url: sort_path, method: :get, local: true do |form| %>
   <%= form.select :keyword,[ ['投稿が新しい順', 'new'],
                             ['投稿が古い順', 'old'],
@@ -15,6 +16,7 @@
                           ] %>
   <%=form.submit class:"sort-box" %>
         <% end %>
+      <%end%>
 <% @posts.each do |post| %>
 
     <div class="content_post" style='background-image: url(<%= post.image %>);'>
