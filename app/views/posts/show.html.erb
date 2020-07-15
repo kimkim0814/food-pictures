@@ -2,7 +2,6 @@
   <div class="content_show" style="background-image: url(<%= @post.image %>);">
       <% if user_signed_in? && current_user.id == @post.user_id %>
     <div class="more">
-      <span><%= image_tag 'arrow_top.png' %></span>
       <ul class="more_list">
 
         <li>
