@@ -26,9 +26,10 @@
         </ul>
 
       </div>
-      <span class="name">
-        <%= post.name %>
-      </span>
+      <div class="name">
+        <p><%= post.name %></p>
+      </div>
+      <i class= "fas fa-heart"> <%= post.likes.count %></i>
     </div>
      
      <% end %>
