@@ -1,3 +1,5 @@
+#カテゴリー
+
 Category.create(name: '麺類')
 Category.create(name: 'ご飯類')
 Category.create(name: '和食')

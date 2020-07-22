@@ -1,17 +1,19 @@
 // 投稿画面
 .container{
   text-align: center;
-  input,textarea {
-    width: 50%;
-    border: 1px solid ;
-    border-radius: 5px;
-    font-family: monospace;
-    padding: 10px 15px;
-    display: inline-block;
-  }
+  .store-image{
+    input,textarea {
+      width: 50%;
+      border: 1px solid ;
+      border-radius: 5px;
+      font-family: monospace;
+      padding: 10px 15px;
+
+    }
+}
   
 
-  input[type="submit"] {
+  .send-btn{
   
     display: block;
     border-radius: 20px;
@@ -21,9 +23,10 @@
     font-size: 18px;
     width: 100px;
     margin: 0 auto;
+    padding: 10px 15px;
   }
-  label{
-  display:none;
-  }
+  .category-box{
+     color: white;
+    }
 
 }
