@@ -1,12 +1,18 @@
 <div class="contents row">
-  <div class="container">
+  <div class="container-edit">
     <%= form_with(model: @post, local: true) do |form| %>
-      <h3>
-        編集する
-      </h3>
-      <%= form.text_field :name, placeholder: "店名" %>
-      <%= form.file_field :image %>
-      <%= form.submit "SEND" %>
+      <%= form.text_field :name, placeholder: "店名" ,class:"text-box"%>
+      <%= form.file_field :image ,class:"text-box"%>
+        <div class="category-box">
+       <%= form.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %>
+       <%= category.label do %>
+          <%= category.check_box %>
+          <%= category.text %>
+      <% end %>
+       <% end %>
+            </div>
+      <%= form.submit "SEND", class:"send-btn" %>
     <% end %>
   </div>
+  
 </div>

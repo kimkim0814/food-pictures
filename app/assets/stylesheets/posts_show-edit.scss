@@ -1,0 +1,73 @@
+//詳細
+.content_show{
+  .show-list{
+    li{
+      float: left;
+     
+    a{
+      color: deeppink;
+      font-weight: bold;
+      font-size: 30px;
+
+    }
+  }
+
+  }
+    .category-box{
+      background-color:maroon;
+      width: 200px;
+      margin: 0 auto;
+      bottom: 0;
+    span{
+      color: white;
+
+      font-weight: bold;
+      font-size:30px;
+      
+    }
+    .category-names{
+      color:white;
+      font-weight: bold;
+      font-size:25px;
+
+    }
+  }
+
+}
+.container-edit{
+
+
+
+  .text-box {
+    width: 50%;
+    border: 1px solid ;
+    border-radius: 5px;
+    font-family: monospace;
+    padding: 10px 15px;
+
+  }
+  .category-box{
+    color: deeppink;
+     font-weight: bold;
+  }
+  .send-btn{
+  
+    display: block;
+    border-radius: 20px;
+    color:black;
+    background-color: gold;
+    border:solid 1px brown;
+    font-size: 18px;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+}
+#comment_text {
+  width: 50%;
+  border: 1px solid ;
+  border-radius: 5px;
+  font-family: monospace;
+  padding: 10px 15px;
+
+}
