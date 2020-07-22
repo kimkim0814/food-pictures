@@ -2,7 +2,7 @@
   <div class="content_show" style="background-image: url(<%= @post.image %>);">
       <% if user_signed_in? && current_user.id == @post.user_id %>
     <div class="more">
-      <ul class="more_list">
+      <ul class="show-list">
 
         <li>
           <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
@@ -13,6 +13,12 @@
       </ul>
     </div>
       <% end %>
+      <div class="category-names">
+      <span>【カテゴリ】</span>
+      <% @post.categories.each do |category| %>
+        <%= category.name %>
+      <% end %>
+      </div>
   <div class= "like-function">
     <% if current_user.already_liked?(@post) %>
       <%= link_to post_like_path(@post), method: :delete do %>
@@ -23,7 +29,7 @@
        <i class= "far fa-heart"> <%= @post.likes.count %></i>
         <% end %>
     <% end %>
-</div>
+  </div>
         <div class="name">
         <p><%=@post.name%></p>
       </div>
