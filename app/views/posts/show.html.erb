@@ -3,7 +3,6 @@
       <% if user_signed_in? && current_user.id == @post.user_id %>
     <div class="more">
       <ul class="show-list">
-
         <li>
           <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
         </li>
@@ -13,11 +12,13 @@
       </ul>
     </div>
       <% end %>
+      <div class=category-box>
+         <span>【カテゴリ】</span>
       <div class="category-names">
-      <span>【カテゴリ】</span>
       <% @post.categories.each do |category| %>
         <%= category.name %>
       <% end %>
+      </div>
       </div>
   <div class= "like-function">
     <% if current_user.already_liked?(@post) %>
@@ -37,7 +38,7 @@
     <div class="container">
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
         <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
+        <%= form.submit "SEND",class: "send-btn" %>
       <% end %>
  
       <div class="comments">
