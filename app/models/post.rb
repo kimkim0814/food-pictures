@@ -2,7 +2,7 @@ class Post < ApplicationRecord
   mount_uploader :image, ImageUploader
   validates :image, presence: true
   belongs_to :user
-  belongs_to :category
+  has_many :categories,through: :post_category_relations
   has_many :likes, dependent: :destroy
   has_many :comments
 
