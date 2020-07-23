@@ -128,11 +128,12 @@ body{
       position: absolute;
       border: solid 2px #FFC107;
       background-color: coral;
-          p{
-          color: white;
-          font-size: 25px;
-          font-family: serif;
-          }
+
+        p{
+        color: white;
+        font-size: 25px;
+        font-family: serif;
+        }
     }
 
   }
@@ -165,6 +166,9 @@ body{
       position: absolute;
       border: solid 2px #FFC107;
       background-color: coral;
+      .category{
+        color: white;
+      }
           p{
           color: white;
           font-size: 30px;
