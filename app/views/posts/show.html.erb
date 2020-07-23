@@ -12,14 +12,7 @@
       </ul>
     </div>
       <% end %>
-      <div class=category-box>
-         <span>【カテゴリ】</span>
-      <div class="category-names">
-      <% @post.categories.each do |category| %>
-        <%= category.name %>
-      <% end %>
-      </div>
-      </div>
+
   <div class= "like-function">
     <% if current_user.already_liked?(@post) %>
       <%= link_to post_like_path(@post), method: :delete do %>
@@ -32,6 +25,12 @@
     <% end %>
   </div>
         <div class="name">
+         <div class="category">
+          <span>【カテゴリ】</span>
+        <% @post.categories.each do |category| %>
+        <%= category.name %>
+      <% end %>
+      </div>
         <p><%=@post.name%></p>
       </div>
   </div>
