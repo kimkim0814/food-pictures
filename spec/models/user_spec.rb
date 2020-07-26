@@ -6,7 +6,7 @@ RSpec.describe User, type: :model do
     @user = build(:user)
   end
 
-  describe 'バリデーション' do
+  describe 'ユーザー登録機能' do
     it 'emailが空だとNG' do
       @user.email = ''
       expect(@user.valid?).to eq(false)
