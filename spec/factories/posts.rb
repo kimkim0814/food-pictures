@@ -1,8 +1,8 @@
 FactoryBot.define do
 
   factory :post do
-    name              {"寿司屋"}
-    image                 {""}
+    name              {"まぐろ太郎"}
+    image             {"download-7jpg"}
   end
 
 end
