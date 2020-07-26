@@ -2,7 +2,7 @@ food-pictures
 ====
 自身で初めて作成を手掛けたアプリケーションです。
 僕を含めた食べ物が好きな方のために作成しました。
-<img width="1439" alt="スクリーンショット 2020-06-25 18 19 59" src="https://user-images.githubusercontent.com/54876760/85692799-a7c09f80-b710-11ea-84e3-f83e479d6a6e.png">
+![スクリーンショット 2020-07-26 20 04 04](https://user-images.githubusercontent.com/54876760/88477487-57d93080-cf7b-11ea-8d92-c702a4fa3e8f.png)
 投稿画面
 <img width="1004" alt="スクリーンショット 2020-07-22 18 13 13" src="https://user-images.githubusercontent.com/54876760/88158519-1da02400-cc47-11ea-9d57-81743da48a00.png">
 
