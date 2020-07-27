@@ -53,7 +53,7 @@ https://food-pictures.herokuapp.com/
  - カテゴリ機能の実装(2020-7-22)
 
 ## ER図
-<img width="716" alt="スクリーンショット 2020-07-22 18 36 21" src="https://user-images.githubusercontent.com/54876760/88161132-8f2da180-cc4a-11ea-95b1-7e72e712981a.png">
+![erd](https://user-images.githubusercontent.com/54876760/88580393-7f68ef80-d086-11ea-9c8a-a73802f4720b.png)
 
 ## 今後について
 機能面として、どの食べ物が人気なのかわかりやすくするためいいねを多い順にソートする機能(2020-7-3実装)と画像が消えてしまうのでストレージにAWS S3（2020-6-17実装）を追加を、dockerの導入をしたいと考えている。
