@@ -53,6 +53,7 @@ https://food-pictures.herokuapp.com/
  - カテゴリ機能の実装(2020-7-22)
 
 ## ER図
+![erd](https://user-images.githubusercontent.com/54876760/88673809-01f3bc80-d124-11ea-834e-fc4a59b97891.png)
 
 
 ## 今後について
