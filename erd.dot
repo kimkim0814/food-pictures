@@ -45,7 +45,6 @@ m_Post [label = <{<table border="0" align="center" cellspacing="0.5" cellpadding
 </table>
 |
 <table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
-  <tr><td align="left" width="130" port="category_id">category_id <font face="Arial ItalicMT" color="grey60">integer FK</font></td></tr>
   <tr><td align="left" width="130" port="image">image <font face="Arial ItalicMT" color="grey60">string ∗</font></td></tr>
   <tr><td align="left" width="130" port="name">name <font face="Arial ItalicMT" color="grey60">string ∗</font></td></tr>
   <tr><td align="left" width="130" port="user_id">user_id <font face="Arial ItalicMT" color="grey60">integer FK</font></td></tr>
