@@ -93,3 +93,8 @@ gem "jquery-rails"
 
 
 gem 'remotipart'
+
+gem "gmaps4rails"
+gem "geocoder"
+gem "gon"
+gem "dotenv-rails"
