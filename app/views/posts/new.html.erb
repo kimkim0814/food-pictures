@@ -1,6 +1,6 @@
 <div class="contents row">
   <div class="container">
-    <%= form_with(model: @post, local: true) do |form| %>
+    <%= form_with(model: @post, local: true, multipart: true) do |form| %>
     <div class="store-image">
     <%= render 'layouts/error_messages', model: form.object %>
       <%= form.text_field :name, placeholder: "店名" %>
@@ -12,8 +12,17 @@
           <%= category.check_box %>
           <%= category.text %>
       <% end %>
+
        <% end %>
             </div>
+              <div class="spot">
+        <%=form.fields_for :spot do |s| %>
+          <%=s.label :address, "レビュー場所(Google Mapで検索)", class: 'spot__title'%>
+          <%=s.text_field :address, placeholder: "スポットを入力", id: "address", class: 'spot__text'%>
+          <% end %>
+         <input onclick="codeAddress()", type: "button", value: "検索する">
+          <div class="map"></div>
+      </div>
       <%= form.submit "SEND",class: "send-btn" %>
     <% end %>
   </div>
