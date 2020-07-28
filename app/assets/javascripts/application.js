@@ -15,5 +15,7 @@
 //= require rails-ujs
 //= require jquery.remotipart
 //= require_tree .
+//= require underscore
+//= require gmaps/google
 
 
