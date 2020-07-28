@@ -7,8 +7,8 @@ class Post < ApplicationRecord
   has_many :categories,through: :post_category_relations
   has_many :likes, dependent: :destroy
   has_many :comments
-
-
+  has_one :spot, dependent: :destroy
+  accepts_nested_attributes_for :spot
   def self.search(search)
     return Post.all unless search
     Post.where('name LIKE(?)', "%#{search}%")

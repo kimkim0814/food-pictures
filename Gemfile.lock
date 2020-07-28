@@ -527,6 +527,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
+  execjs
   factory_bot_rails
   fog
   font-awesome-sass
