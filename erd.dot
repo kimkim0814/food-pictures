@@ -47,7 +47,7 @@ m_Post [label = <{<table border="0" align="center" cellspacing="0.5" cellpadding
 <table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
   <tr><td align="left" width="130" port="category_id">category_id <font face="Arial ItalicMT" color="grey60">integer FK</font></td></tr>
   <tr><td align="left" width="130" port="image">image <font face="Arial ItalicMT" color="grey60">string ∗</font></td></tr>
-  <tr><td align="left" width="130" port="name">name <font face="Arial ItalicMT" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial ItalicMT" color="grey60">string ∗</font></td></tr>
   <tr><td align="left" width="130" port="user_id">user_id <font face="Arial ItalicMT" color="grey60">integer FK</font></td></tr>
 </table>
 }>];
@@ -67,10 +67,6 @@ m_User [label = <{<table border="0" align="center" cellspacing="0.5" cellpadding
 <table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
   <tr><td align="left" width="130" port="email">email <font face="Arial ItalicMT" color="grey60">string ∗ U</font></td></tr>
   <tr><td align="left" width="130" port="encrypted_password">encrypted_password <font face="Arial ItalicMT" color="grey60">string ∗</font></td></tr>
-  <tr><td align="left" width="130" port="nickname">nickname <font face="Arial ItalicMT" color="grey60">string</font></td></tr>
-  <tr><td align="left" width="130" port="remember_created_at">remember_created_at <font face="Arial ItalicMT" color="grey60">datetime (0,0)</font></td></tr>
-  <tr><td align="left" width="130" port="reset_password_sent_at">reset_password_sent_at <font face="Arial ItalicMT" color="grey60">datetime (0,0)</font></td></tr>
-  <tr><td align="left" width="130" port="reset_password_token">reset_password_token <font face="Arial ItalicMT" color="grey60">string</font></td></tr>
 </table>
 }>];
   m_User -> m_Post [arrowhead = "normal", arrowtail = "none", weight = "2"];
