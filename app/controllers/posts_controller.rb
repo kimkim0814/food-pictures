@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
   def new
   @post = Post.new
+  @post.spot.build
   end
 
   def create
@@ -32,6 +33,7 @@ class PostsController < ApplicationController
   def destroy
     post = Post.find(params[:id])
     post.destroy
+    @post.spot.build
   end
   
   def edit
