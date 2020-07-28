@@ -4,7 +4,6 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :image
       t.timestamps
-      t.integer "category_id"
     end
   end
 end
