@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   end
   resources :users, only: :show
-  resources :comments,only: [:edit,:destroy]
+  resources :comments,only: :destroy
   get 'sort', to:'posts#sort'
 
 end
