@@ -49,6 +49,7 @@
           <p>
             会員番号<%=comment.user_id %>番さん
             <%= comment.text %>
+            <%=link_to "削除",comment_path(comment.id), method: :delete %>
           </p>
 
         <% end %>
