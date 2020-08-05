@@ -25,9 +25,7 @@ class PostsController < ApplicationController
       render "new"
     end
   end
-  # def create
-  #   Post.create(post_params)
-  # end
+
 
   def destroy
     post = Post.find(params[:id])
