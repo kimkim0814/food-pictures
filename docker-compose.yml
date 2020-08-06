@@ -24,4 +24,3 @@ services:
       - 'mysql-data:/var/lib/mysql'
     environment:
       MYSQL_DATABASE: root
-      MYSQL_ROOT_PASSWORD: food
