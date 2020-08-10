@@ -32,7 +32,7 @@ https://food-pictures.herokuapp.com/
 **インフラ**
 - heroku
 - AWS(S3)(herokuのみだと画像が消えてしまうので追加 2020-06-17)
-- Rspec
+- Rspec (2020-07-24)
 - Docker(2020-08-11)
 ## 機能一覧
   
