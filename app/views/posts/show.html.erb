@@ -45,7 +45,7 @@
        <div class="comment-box">
       <% if @comments %>
         <% @comments.each do |comment| %>
-
+      <%# idを使用することによって2chのように匿名で投稿ができる %>
           <p>
             会員番号<%=comment.user_id %>番さん
             <%= comment.text %>
