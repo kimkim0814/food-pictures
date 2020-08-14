@@ -2,6 +2,16 @@
 .container{
   text-align: center;
   .store-image{
+    p{
+      padding: 0.1em 0.4em;
+      text-decoration: none;
+      background: coral;
+      color: #FFF;
+      border-bottom: solid 4px tomato;
+      border-radius: 3px;
+      width: 140px;
+      margin: 0 auto;
+    }
     .alert {
       color:#262626; 
       background:#FFEBE8;

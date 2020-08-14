@@ -1,9 +1,11 @@
 <%# 新規投稿ページ %>
 <div class="contents row">
   <div class="container">
+ 
     <%= form_with(model: @post, local: true) do |form| %>
     <div class="store-image">
     <%= render 'layouts/error_messages', model: form.object %>
+     <p>店名と画像 両方入力してください</p>
       <%= form.text_field :name, placeholder: "店名" %>
       <%= form.file_field :image %>
     </div>
