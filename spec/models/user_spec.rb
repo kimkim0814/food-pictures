@@ -24,5 +24,16 @@ RSpec.describe User do
       another_user.valid?
       expect(another_user.errors[:email]).to include("has already been taken")
     end
+
+    it " passwordが6文字以上であれば登録できること " do
+      user = build(:user, password: "000000", password_confirmation: "000000")
+      expect(user).to be_valid
+    end
+    
+    it " passwordが5文字以下であれば登録できないこと " do
+      user = build(:user, password: "00000", password_confirmation: "00000")
+      user.valid?
+      expect(user.errors[:password]).to include("is too short (minimum is 6 characters)")
+    end
   end
 end
