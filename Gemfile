@@ -78,7 +78,7 @@ gem 'sqlite3', group: [:development, :test]
 
 gem 'kaminari'
 
-gem 'carrierwave', '~>1.0'
+gem 'carrierwave', '~>1.3'
 
 
 gem "font-awesome-sass"
